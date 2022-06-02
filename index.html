@@ -31,6 +31,23 @@ body {
   font-size: 3vw;
 }
 
+.item-list {
+    display: flex; 
+    align-items: flex-end;
+}
+.item-list div {
+    text-align: start; 
+    margin-left: 3vw;
+}
+
+.item-list div h5 {
+    margin-bottom: 0px;
+}
+
+.item-list div p {
+    font-size: 2vw; 
+    margin-top: 0px;
+}
 audio::-webkit-media-controls{
     width: inherit;
     height: inherit;
@@ -205,39 +222,8 @@ input[type="range" i]::-webkit-media-slider-container{
 <div style="margin-left: 10%; margin-right: 10%;">
   <div class="w3-content" style="max-width:2000px;margin-top:0px; border-radius: 10px; margin-top: 5%; box-shadow: 0px 0px 3px 1px #00000052;">
     <div>
-      <div class="w3-container w3-content w3-center" style="max-width:800px" id="band">
-        <div style="display: flex; align-items:  flex-end;">
-            <img src="img/saltenas.png" width="70vw">
-            <div style="text-align: start; margin-left: 3vw;">
-                <h5 style="margin-bottom: 0px;"> SALTEÑAS</h5>
-                <p style="font-size: 2vw; margin-top: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <img src="img/linha-01.png" style="width: 100%">
-        <div style="display: flex; align-items:  flex-end;">
-            <img src="img/saltenas.png" width="70vw">
-            <div style="text-align: start; margin-left: 3vw;">
-                <h5 style="margin-bottom: 0px;"> SALTEÑAS</h5>
-                <p style="font-size: 2vw; margin-top: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <img src="img/linha-01.png" style="width: 100%">
-        <div style="display: flex; align-items:  flex-end;">
-            <img src="img/saltenas.png" width="70vw">
-            <div style="text-align: start; margin-left: 3vw;">
-                <h5 style="margin-bottom: 0px;"> SALTEÑAS</h5>
-                <p style="font-size: 2vw; margin-top: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <img src="img/linha-01.png" style="width: 100%">
-        <div style="display: flex; align-items:  flex-end;">
-            <img src="img/saltenas.png" width="70vw">
-            <div style="text-align: start; margin-left: 3vw;">
-                <h5 style="margin-bottom: 0px;"> SALTEÑAS</h5>
-                <p style="font-size: 2vw; margin-top: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </div>
-        <img src="img/linha-01.png" style="width: 100%">
+      <div class="w3-container w3-content w3-center" style="max-width:800px" id="lista">
+
 
       </div>
     </div>
@@ -257,10 +243,26 @@ xhttp.onreadystatechange = function() {
         var obj1 = JSON.parse(obj);
         console.log(obj);
         console.log(obj1);
+        obj1.forEach(i => {
+           addList(i);
+        })
     }
 };
 xhttp.open("GET", "lista.json", true);
 xhttp.send()
+
+function addList(item){
+    let div = 
+    `<div class="item-list">
+        <img src="img/`+ item.img +`" width="70vw">
+        <div>
+            <h5>`+ item.titulo +`</h5>
+            <p>`+ item.texto +`</p>
+        </div>
+    </div>
+    <img src="img/linha-01.png" style="width: 100%">`
+    document.getElementById('lista').innerHTML += div;
+}
 
     
 </script>
