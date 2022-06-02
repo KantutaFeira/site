@@ -68,9 +68,10 @@ audio::-webkit-media-controls-panel {
     /* The duration is also specified in MediaControlElements.cpp and LayoutTests/media/media-controls.js */
     transition: opacity 0.3s;
     background-image: url("img/player-2.png");
-    background-position: center;
+    background-position: right;
     background-repeat:  no-repeat;
-    background-size: 100% 100%;
+    background-size: 75% 100%;
+
 }
 
 audio::-webkit-media-controls-play-button {
@@ -78,18 +79,19 @@ audio::-webkit-media-controls-play-button {
     position: absolute;
     border: none;
     box-sizing: border-box;
-    left: -1.5vw;
+    left: -1.0vw;
     padding: 0;
     color: inherit;
     background-image: url("img/player-1.png");
     zoom: 3.0;
+    z-index: 1;
 }
 audio::-webkit-media-controls-current-time-display {
     -webkit-appearance: media-current-time-display;
-    -webkit-user-select: none;
+    -webkit-user-select: none;    
     position: absolute;
-    right: 5.5vw;
-    top: 0%;
+    left: 28vw;
+    top: -2vw;
     display: flex;
     border: none;
     cursor: default;
@@ -113,8 +115,8 @@ audio::-webkit-media-controls-time-remaining-display {
     -webkit-appearance: media-current-time-display;
     -webkit-user-select: none;
     position: absolute;
-    right: 0%;
-    top: 0%;
+    right: 6vw;;
+    top: -2vw;
     display: flex;
     border: none;
     cursor: default;
@@ -133,12 +135,14 @@ audio::-webkit-media-controls-time-remaining-display {
     text-indent: 0;
     text-shadow: none;
     text-decoration: none;
+    unicode-range: U+30-39;
 }
-audio::-webkit-media-controls-timeline, video::-webkit-media-controls-timeline {
+
+audio::-webkit-media-controls-timeline {
     -webkit-appearance: media-slider;
     position: absolute;
     width:55%;
-    left: 20%;
+    left: 30%;
 }
 audio::-webkit-media-controls-mute-button {
     display: block !important;
@@ -146,10 +150,21 @@ audio::-webkit-media-controls-mute-button {
     left: 750%
 }
 
+audio::-webkit-media-controls-mute-button {
+    display: none !important;
+}
+
 audio::-webkit-media-controls-volume-slider {
     display: none !important;
-    position: absolute;
-    left: -200%
+}
+
+audio::-webkit-media-controls-volume-slider-container {
+    display: none !important;
+}
+
+input[type="range" i]::-webkit-media-slider-container{
+    background-color: red !important;
+    zoom: 10;
 }
 
 </style>
@@ -192,7 +207,7 @@ audio::-webkit-media-controls-volume-slider {
       </div>
     </div>
       <img src="img/linha-01.png" style="width: 100%">
-      <audio controls="true "style="width: 100%;">
+      <audio controls="true" controlsList="noplaybackrate nodownload nofullscreen" style="width: 100%;">
         <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
