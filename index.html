@@ -243,22 +243,24 @@ xhttp.onreadystatechange = function() {
         var obj1 = JSON.parse(obj);
         console.log(obj);
         console.log(obj1);
-        obj1.forEach(i => {
-           addList(i);
+        obj1.forEach(function (item, index){
+           addList(item, index);
         })
     }
 };
 xhttp.open("GET", "lista.json", true);
 xhttp.send()
 
-function addList(item){
+function addList(item, index){
     let div = 
     `<div class="item-list">
+    	<a href="item.html?id=`+ index +`">
         <img src="img/`+ item.img +`" width="70vw">
         <div>
             <h5>`+ item.titulo +`</h5>
             <p>`+ item.texto +`</p>
         </div>
+	</a>
     </div>
     <img src="img/linha-01.png" style="width: 100%">`
     document.getElementById('lista').innerHTML += div;
