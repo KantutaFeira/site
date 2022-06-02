@@ -34,6 +34,7 @@ body {
 .item-list {
     display: flex; 
     align-items: flex-end;
+    text-decoration:none;
 }
 .item-list div {
     text-align: start; 
@@ -253,15 +254,13 @@ xhttp.send()
 
 function addList(item, index){
     let div = 
-    `<div class="item-list">
-    	<a href="item.html?id=`+ index +`">
-        <img src="img/`+ item.img +`" width="70vw">
-        <div>
-            <h5>`+ item.titulo +`</h5>
-            <p>`+ item.texto +`</p>
-        </div>
-	</a>
-    </div>
+        `<a class="item-list" href="item.html?id=`+ index +`">
+            <img src="img/`+ item.img +`" width="70vw">
+            <div>
+                <h5>`+ item.titulo +`</h5>
+                <p>`+ item.texto +`</p>
+            </div>
+        </a>
     <img src="img/linha-01.png" style="width: 100%">`
     document.getElementById('lista').innerHTML += div;
 }
