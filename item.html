@@ -165,7 +165,7 @@ input[type="range" i]::-webkit-media-slider-container{
     <img src="img/seta-voltar.png" style="position: absolute; z-index: 1; width: 10%; top: 1%; left: 1%;">
   </a>
   <div class="mySlides w3-display-container w3-center">
-    <div style="position: absolute; top: 56.5%;">
+    <div style="position: absolute; top: 56.5%; z-index:-1">
   		<img src="img/contorno-branco.png" style="width: 70%;">
   		<img src="img/contorno-colorido.png" style="width: 70%;z-index: -1;opacity: 50%;">
   	</div>
@@ -184,7 +184,7 @@ input[type="range" i]::-webkit-media-slider-container{
         <h2 id="title" style="font-family: 'Century Gothic Bold'; font-size: 5vw; margin-bottom: 0px;"></h2>
         <img src="img/linha-01.png" style="width: 100%">
 
-        <img src="img/player-1.png" style="width: 30vw;">
+        <img onclick="playPause()" src="img/player-1.png" style="width: 30vw;">
 
         <div style="margin-left: 5%; margin-right: 5%;">
           <p class="w3-justify" id="text"></p>
@@ -218,6 +218,16 @@ function setPage(item){
     document.getElementById('title').innerHTML = item.titulo;
     document.getElementById('text').innerHTML = item.texto;
     document.getElementById('cover').src = 'img/' + item.img;
+}
+
+function playPause(){
+    let audio = document.getElementsByTagName('audio')[0];
+    if(audio.paused){
+        audio.play();
+    }else{
+        audio.pause();
+    }
+
 }
 
 </script>
