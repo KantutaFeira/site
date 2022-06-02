@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feira Kantuta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@font-face {
+  font-family: 'Century Gothic Regular';
+  src: url('CenturyGothic.eot');
+  src: url('CenturyGothic.eot?#iefix') format('embedded-opentype'),
+  url('CenturyGothic.woff') format('woff'),
+  url('CenturyGothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Century Gothic Bold';
+  src: url('CenturyGothic-Bold.eot');
+  src: url('CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+  url('CenturyGothic-Bold.woff') format('woff'),
+  url('CenturyGothic-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Century Gothic Regular", sans-serif;
+  font-size: 3vw;
+}
+
+audio::-webkit-media-controls{
+    width: inherit;
+    height: inherit;
+    position: relative;
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+audio::-webkit-media-controls-enclosure, video::-webkit-media-controls-enclosure {
+    width: 100%;
+    max-width: 800px;
+    height: 30px;
+    flex-shrink: 0;
+    bottom: 0;
+    text-indent: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+audio::-webkit-media-controls-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    -webkit-user-select: none;
+    z-index: 0;
+    overflow: hidden;
+    text-align: right;
+    bottom: auto;
+    background-color: white;
+    /* The duration is also specified in MediaControlElements.cpp and LayoutTests/media/media-controls.js */
+    transition: opacity 0.3s;
+    background-image: url("img/player-2.png");
+    background-position: right;
+    background-repeat:  no-repeat;
+    background-size: 100% 100%;
+
+}
+
+audio::-webkit-media-controls-play-button {
+    display: none;
+}
+audio::-webkit-media-controls-current-time-display {
+    -webkit-appearance: media-current-time-display;
+    -webkit-user-select: none;    
+    position: absolute;
+    left: 10vw;
+    top: -1.2vw;
+    display: flex;
+    border: none;
+    cursor: default;
+    height: 30px;
+    margin: 0 9px 0 0;
+    padding: 0;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-decoration: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+    -webkit-appearance: media-current-time-display;
+    -webkit-user-select: none;
+    position: absolute;
+    right: 7vw;;
+    top: -1.2vw;
+    display: flex;
+    border: none;
+    cursor: default;
+    height: 30px;
+    margin: 0 9px 0 0;
+    padding: 0;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-decoration: none;
+    unicode-range: U+30-39;
+}
+
+audio::-webkit-media-controls-timeline {
+    -webkit-appearance: media-slider;
+    position: absolute;
+    width:80%;
+    left: 5%;
+}
+audio::-webkit-media-controls-mute-button {
+    display: block !important;
+    position: absolute;
+    left: 750%
+}
+
+audio::-webkit-media-controls-mute-button {
+    display: none !important;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    display: none !important;
+}
+
+audio::-webkit-media-controls-volume-slider-container {
+    display: none !important;
+}
+
+input[type="range" i]::-webkit-media-slider-container{
+    background-color: red !important;
+    zoom: 10;
+}
+
+</style>
+</head>
+<body>
+  <a href="index.html">
+    <img src="img/seta-voltar.png" style="position: absolute; z-index: 1; width: 10%; top: 1%; left: 1%;">
+  </a>
+  <div class="mySlides w3-display-container w3-center">
+    <div style="position: absolute; top: 56.5%;">
+  		<img src="img/contorno-branco.png" style="width: 70%;">
+  		<img src="img/contorno-colorido.png" style="width: 70%;z-index: -1;opacity: 50%;">
+  	</div>
+  	<div>
+    	<img id="cover" src="img/img1.png" style="width:100%; border-bottom-left-radius: 10%; border-bottom-right-radius: 10%;">
+	  </div>
+
+	  <img src="img/barra lateral esq.png" style="position: absolute; left: 2.5vw; z-index: -1; top: 55vh; width: 3vw; margin: -90vh 0px 0px 0px;">
+  	<img src="img/barra lateral dir.png" style="position: absolute; right: 2.5vw; z-index: -1; top: 55vh; width: 3vw; margin: -90vh 0px 0px 0px;">
+  </div>
+  
+<div style="margin-left: 10%; margin-right: 10%;">
+  <div class="w3-content" style="max-width:2000px;margin-top:0px; border-radius: 10px; margin-top: 5%; box-shadow: 0px 0px 3px 1px #00000052;">
+    <div>
+      <div class="w3-container w3-content w3-center" style="max-width:800px" id="band">
+        <h2 id="title" style="font-family: 'Century Gothic Bold'; font-size: 5vw; margin-bottom: 0px;"></h2>
+        <img src="img/linha-01.png" style="width: 100%">
+
+        <img src="img/player-1.png" style="width: 30vw;">
+
+        <div style="margin-left: 5%; margin-right: 5%;">
+          <p class="w3-justify" id="text"></p>
+        </div>
+        
+      </div>
+    </div>
+      <img src="img/linha-01.png" style="width: 100%">
+      <audio controls="true" controlsList="noplaybackrate nodownload nofullscreen" style="width: 100%;">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+  </div>
+</div>
+
+<script>
+
+    let id = window.location.search.replace('?id=', '');
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var obj1 = JSON.parse(this.responseText);
+            console.log(obj1);
+             setPage(obj1[id]);
+        }
+    };
+xhttp.open("GET", "lista.json", true);
+xhttp.send()
+
+function setPage(item){
+    document.getElementById('title').innerHTML = item.titulo;
+    document.getElementById('text').innerHTML = item.texto;
+    document.getElementById('cover').src = 'img/' + item.img;
+}
+
+</script>
+
+</body>
+</html>
