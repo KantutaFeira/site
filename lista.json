@@ -2,51 +2,61 @@
 	{
 		"titulo": "SALTEÑAS",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "saltenas.png"
+		"img": "saltenas.png",
+		"imgHeader": "saltenasHeader.png"
 	},
 	{
 		"titulo": "PONCHO",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "poncho.png"
+		"img": "poncho.png",
+		"imgHeader": "ponchoHeader.png"
 	},
 	{
 		"titulo": "CHICHA",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"img": "chicha.png"
+		"imgHeader": "chichaHeader.png"
 	},
 	{
 		"titulo": "METAIS ENERGIZADOS",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"img": "metais.png"
+		"imgHeader": "metaisHeader.png"
 	},
 	{
 		"titulo": "CHOLITAS",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"img": "cholitas.png"
+		"imgHeader": "cholitasHeader.png"
 	},
 	{
 		"titulo": "INCA KOLA",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"img": "inca-kola.png"
+		"imgHeader": "inca-kolaHeader.png"
 	},
 	{
 		"titulo": "MOCOCHINE",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"img": "mocochine.png"
+		"imgHeader": "mocochineHeader.png"
 	},
 	{
 		"titulo": "PACEÑA",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"img": "pacena.png"
+		"imgHeader": "pacenaHeader.png"
 	},
 	{
 		"titulo": "CHARQUEKAN",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"img": "charquekan.png"
+		"imgHeader": "charquekanHeader.png"
 	},
 	{
 		"titulo": "LHÃMAS",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"img": "lhamas.png"
+		"imgHeader": "lhamasHeader.png"
 	}
 ]
