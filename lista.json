@@ -5,13 +5,48 @@
 		"img": "saltenas.png"
 	},
 	{
-		"titulo": "CHICHAS",
+		"titulo": "PONCHO",
+		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"img": "poncho.png"
+	},
+	{
+		"titulo": "CHICHA",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		"img": "chicha.png"
 	},
 	{
-		"titulo": "SALTEÑAS",
+		"titulo": "METAIS ENERGIZADOS",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "saltenas.png"
+		"img": "metais.png"
+	},
+	{
+		"titulo": "CHOLITAS",
+		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"img": "cholitas.png"
+	},
+	{
+		"titulo": "INCA KOLA",
+		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"img": "inca-kola.png"
+	},
+	{
+		"titulo": "MOCOCHINE",
+		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"img": "mocochine.png"
+	},
+	{
+		"titulo": "PACEÑA",
+		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"img": "pacena.png"
+	},
+	{
+		"titulo": "CHARQUEKAN",
+		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"img": "charquekan.png"
+	},
+	{
+		"titulo": "LHÃMAS",
+		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"img": "lhamas.png"
 	}
 ]
