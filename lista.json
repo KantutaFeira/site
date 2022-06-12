@@ -14,49 +14,49 @@
 	{
 		"titulo": "CHICHA",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "chicha.png"
+		"img": "chicha.png",
 		"imgHeader": "chichaHeader.png"
 	},
 	{
 		"titulo": "METAIS ENERGIZADOS",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "metais.png"
+		"img": "metais.png",
 		"imgHeader": "metaisHeader.png"
 	},
 	{
 		"titulo": "CHOLITAS",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "cholitas.png"
+		"img": "cholitas.png",
 		"imgHeader": "cholitasHeader.png"
 	},
 	{
 		"titulo": "INCA KOLA",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "inca-kola.png"
+		"img": "inca-kola.png",
 		"imgHeader": "inca-kolaHeader.png"
 	},
 	{
 		"titulo": "MOCOCHINE",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "mocochine.png"
+		"img": "mocochine.png",
 		"imgHeader": "mocochineHeader.png"
 	},
 	{
 		"titulo": "PACEÑA",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "pacena.png"
+		"img": "pacena.png",
 		"imgHeader": "pacenaHeader.png"
 	},
 	{
 		"titulo": "CHARQUEKAN",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "charquekan.png"
+		"img": "charquekan.png",
 		"imgHeader": "charquekanHeader.png"
 	},
 	{
 		"titulo": "LHÃMAS",
 		"texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"img": "lhamas.png"
+		"img": "lhamas.png",
 		"imgHeader": "lhamasHeader.png"
 	}
 ]
