@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Feira Kantuta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@font-face {
+  font-family: 'Century Gothic Regular';
+  src: url('CenturyGothic.eot');
+  src: url('CenturyGothic.eot?#iefix') format('embedded-opentype'),
+  url('CenturyGothic.woff') format('woff'),
+  url('CenturyGothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Century Gothic Bold';
+  src: url('CenturyGothic-Bold.eot');
+  src: url('CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+  url('CenturyGothic-Bold.woff') format('woff'),
+  url('CenturyGothic-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Century Gothic Regular", sans-serif;
+  font-size: 3vw;
+}
+
+.item-list {
+    display: flex; 
+    align-items: center;
+    text-decoration:none;
+}
+.item-list img{
+	z-index:1;
+	filter:drop
+}
+.item-list div {
+    text-align: start; 
+    margin-left: 3vw;
+}
+
+.item-list div h5 {
+    margin-bottom: 0px;
+	text-align:center;
+	font-size: 3vw;
+	font-weight: bold;
+}
+
+.item-list div p {
+    font-size: 2vw; 
+    margin-top: 0px;
+}
+
+#menu div{
+	padding:1.5vw;
+}
+</style>
+</head>
+<body>
+<a href="index.html">
+    <img src="img/seta-voltar.png" style="position: absolute; z-index: 1; width: 10%; top: 1%; left: 1%;">
+  </a>
+<div id="page">
+	  <div class="mySlides w3-display-container w3-center">
+	  	<div style="display: flex; justify-content: center; align-items: flex-end">
+			<img src="img/logo.png" style="position: absolute; z-index: 1; width:70%; margin: auto">
+			
+	    	<img src="img/img0.png" width=100%; style="border-bottom-left-radius: 10%; border-bottom-right-radius: 10%; object-fit: cover;height: 30vh;">	
+		  </div>
+		  	<div style="position: absolute; z-index:-1; top: 29vh;">
+	  			<img src="img/contorno-colorido.png" style="width: 70%;z-index: -1;opacity: 30%;">
+	  		</div>
+	
+	  </div>
+	<div style="display: flex; flex-direction: column; justify-content: center;">
+			
+		<img src="img/barra lateral esq.png" style="position: absolute; left: 2.5vw; z-index: -1; top: 56vh; width: 3vw; margin: -90vh 0px 0px 0px; object-fit: cover; height: 150vh;">
+		<img src="img/barra lateral dir.png" style="position: absolute; right: 2.5vw; z-index: -1; top: 56vh; width: 3vw; margin: -90vh 0px 0px 0px; object-fit: cover; height: 150vh;">
+	</div>
+	<div style="margin-left: 10%; margin-right: 10%;">
+	  <div class="w3-content" style="max-width:2000px;margin-top:0px; border-radius: 10px; margin-top: 5%; box-shadow: 0px 0px 3px 1px #00000052;">
+	    <div>
+		  <div style="margin-bottom: 2vh;padding-top: 1vh;">
+		  	<h2 style="font-family: 'Century Gothic Bold'; font-size: 5vw; margin-bottom: 0px; text-align: center;">PARCEIROS</h2>
+          	<img src="img/linha-01.png" style="margin-left: auto; margin-right: auto; width: 70%; display: block;">
+	      </div>
+		  <div class="w3-container w3-content w3-center" style="max-width:800px" id="lista">
+			<a class="item-list" href="">
+	            <img src="img/associacao-feira-kantuta.png" width="70vw">
+	            <div>
+	                <h5>ASSOSIAÇÃO FEIRA KANTUTA</h5>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            </div>
+	        </a>
+	   		<img src="img/linha-01.png" style="width: 100%">
+			<a class="item-list" href="">
+	            <div>
+	                <h5>BOLÍVIA CULTURAL</h5>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            </div>
+				<img src="img/bolivia-cultural.png" width="70vw">
+	        </a>
+	   		<img src="img/linha-01.png" style="width: 100%">
+			<a class="item-list" href="">
+	        	<img src="img/inti-wahua.png" width="70vw">
+			    <div>
+	                <h5>INTI WAHUA</h5>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            </div>
+			</a>
+	   		<img src="img/linha-01.png" style="width: 100%">
+			<a class="item-list" href="">
+	        	<div>
+	                <h5>CHOLITAS DA BABILÔNIA</h5>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            </div>
+				<img src="img/cholitas-da-babilonia.png" width="70vw">
+			</a>
+	   		<img src="img/linha-01.png" style="width: 100%">
+			<a class="item-list" href="">			
+	        	<img src="img/quinpus.png" width="70vw">	
+			    <div>
+	                <h5>QUINPUS PODCAST</h5>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            </div>
+			</a>
+	   		<img src="img/linha-01.png" style="width: 100%">
+			<a class="item-list" href="">
+	        	<div>
+	                <h5>ASSOCIAÇÃO CULTURAL FOLCLÓRICA BOLÍVIA BRASIL</h5>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            </div>
+				<img src="img/acfbb.png" width="70vw">
+			</a>
+	   		<img src="img/linha-01.png" style="width: 100%">
+			<a class="item-list" href="">			
+	        	<img src="img/sociedad-folklorica-boliviana.png" width="70vw">	
+			    <div>
+	                <h5>SOCIEDAD FOLKLORICA BOLIVIANA</h5>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            </div>
+			</a>
+	   		<img src="img/linha-01.png" style="width: 100%">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+</body>
+</html>
